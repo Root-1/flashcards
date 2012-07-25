@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>OpenMinds Flashcards Demo</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <a id="login" href="#" onclick="login()">Log In to OpenMinds</a>
+    <a id="logout" href="#" onclick="logout()">Log Out of OpenMinds</a>
+
+    <div id="main">
+      <div id="app">
+        <h2 id="title"></h2>
+        <h5 id="description"></h5>
+        <div id="flashcards">
+          <a id="prev" href="#">&laquo;</a>
+          <a id="next" href="#">&raquo;</a>
+          <div id="flashcard">
+            <div id="index"></div>
+            <div id="word"></div>
+            <div id="defn"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="logged-out">
+        <h1>OpenMinds Flashcard Demo App</h1>
+        <a href="#" onclick="login()">Log In To OpenMinds</a> to start the app.
+      </div>
+    </div>
+
+    <script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="openminds_connect.js" type="text/javascript" charset="utf-8"></script>
+    <script src="flashcards.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<title>Connecting to OpenMinds</title>
+<body>
+  <script>
+    // Parses the access token from the URL and passes it to the
+    // opening page.
+    // Then, calls window.close() to close the popup.
+    // NOTE(adam): Safari does not properly detect when a popup window
+    // is closed. Thus, we set om.windowClosed on the main app page,
+    // so that the main app is aware that the popup window is gone.
+    var opener = window.opener;
+
+    var params = {};
+    var parameters = window.location.search.slice(1).split('&');
+    for (var i = 0; i < parameters.length; ++i) {
+      var p = parameters[i].split('=');
+      params[p[0]] = decodeURIComponent(p[1]);
+    }
+
+    if (params.redirect) {
+      window.location = params.redirect;
+    } else if (params.error) {
+      document.body.innerHTML = (
+          '<h2>' + params.error + '</h2>');
+      if (params.error_description) {
+        document.body.innerHTML += ('<h3>' + params.error_description + '</h>');
+      }
+    } else {
+      var accessTokenRegExp = new RegExp('#access_token=([^&]*)');
+      var accessTokenMatch = window.location.hash.match(accessTokenRegExp);
+      if (accessTokenMatch && accessTokenMatch.length == 2) {
+        authToken = accessTokenMatch[1];
+        console.log(opener);
+        if (opener && opener.om) {
+          opener.om.accessToken = authToken;
+          opener.om.windowClosed = true;
+          window.close();
+        }
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+#main {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+#flashcards {
+  width: 600px;
+  height: 300px;
+}
+#prev, #next {
+  height: 300px;
+  line-height: 300px;
+  font-size: 72px;
+  width: 50px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+#prev:hover, #next:hover {
+  background: #eee;
+  color: #333;
+}
+#prev {
+  float: left;
+}
+#next {
+  float: right;
+}
+#flashcard {
+  margin: 0 10px;
+  padding: 20px;
+  width: 438px;
+  height: 258px;
+  background: #ddd;
+  float: left;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+#index {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#word {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+#defn {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+}
