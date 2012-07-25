@@ -1,7 +1,7 @@
 // ADD YOUR OPENMINDS APP ID HERE
-var APP_ID = '500f92bf94d94a5b13000013';
+var APP_ID = '5010837a94d94a5b13000225';
 // SPECIFY URL OF YOUR REDIRECT URL HERE
-var REDIRECT_URI = 'http://localhost/~adam/flashcards/oauth_redirect.html';
+var REDIRECT_URI = 'http://root-1.github.com/flashcards/oauth_redirect.html';
 
 // The OpenMinds API host.
 var API_ROOT = 'https://api.openminds.io';
