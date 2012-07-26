@@ -40,8 +40,6 @@ om.logIn = function(options) {
     url += '&redirect_uri=' + encodeURIComponent(options.redirectUri);
   }
 
-  url = options.redirectUri + '?redirect=' + encodeURIComponent(url);
-
   var width = options.width || DEFAULT_LOGIN_WINDOW_WIDTH;
   var height = options.height || DEFAULT_LOGIN_WINDOW_HEIGHT;
   var loginWindow = window.open(

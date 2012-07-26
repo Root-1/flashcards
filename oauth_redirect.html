@@ -17,9 +17,7 @@
       params[p[0]] = decodeURIComponent(p[1]);
     }
 
-    if (params.redirect) {
-      window.location = params.redirect;
-    } else if (params.error) {
+    if (params.error) {
       document.body.innerHTML = (
           '<h2>' + params.error + '</h2>');
       if (params.error_description) {
