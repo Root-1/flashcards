@@ -3,7 +3,7 @@ This software is licensed under the MIT/X11 license.
 MIT/X11 license
 ---------------
 
-Copyright &copy; 2012 [Root-1 Inc.][1].
+Copyright &copy; 2012 [Root-1 Inc][1].
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
