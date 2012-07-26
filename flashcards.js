@@ -35,7 +35,6 @@ function login() {
     redirectUri: REDIRECT_URI,
     callback: function(accessToken) {
       if (accessToken) {
-        localStorage.setItem('omAccessToken', accessToken);
         postLogIn();
       }
     }
@@ -48,7 +47,6 @@ function login() {
  * local storage. Shows the logged-out view of the page.
  */
 function logout() {
-  localStorage.removeItem('omAccessToken');
   om.logOut(function() {
     $('#app').hide();
     $('#logout').hide();

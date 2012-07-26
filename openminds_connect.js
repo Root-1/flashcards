@@ -53,6 +53,7 @@ om.logIn = function(options) {
     if (loginWindow.closed || om.windowClosed) {
       window.clearInterval(timerId);
       om.windowClosed = false;
+      om.accessToken = window.localStorage.getItem('omAccessToken');
       options.callback && options.callback(om.accessToken);
     }
   }, LOGIN_WINDOW_POLL_DURATION);
@@ -73,6 +74,7 @@ om.logOut = function(callback) {
   image.onerror = callback;
   image.src = 'http://openminds.io/auth/signout?no_redirect=1';
   document.body.appendChild(image);
+  window.localStorage.removeItem('omAccessToken');
 };
 
 })();

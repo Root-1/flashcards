@@ -29,13 +29,11 @@
       var accessTokenRegExp = new RegExp('#access_token=([^&]*)');
       var accessTokenMatch = window.location.hash.match(accessTokenRegExp);
       if (accessTokenMatch && accessTokenMatch.length == 2) {
-        authToken = accessTokenMatch[1];
-        console.log(opener);
+        window.localStorage.setItem('omAccessToken', accessTokenMatch[1]);
         if (opener && opener.om) {
-          opener.om.accessToken = authToken;
           opener.om.windowClosed = true;
-          window.close();
         }
+        window.close();
       }
     }
   </script>
