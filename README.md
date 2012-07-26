@@ -15,7 +15,6 @@ To run the app yourself, you will need to clone the repository and make the dire
 5. You can now access the app at "http://localhost/~YOUR_USERNAME/flashcards", where YOUR_USERNAME is your Mac user name. Note that you will not be able to connect to OpenMinds until completing the steps in "Registering the App".
 
 ### Registering the App
-You will need to register your app with OpenMinds to access the API.
 1. Visit the [Applications Endpoint](http://openminds.io/api_explorer/applications_collection?url=%2Fdeveloper%2Fapps&method=POST) in the OpenMinds API Explorer.
 2. In the "JSON Body", enter JSON with the listed properties. In particular, you must supply a name, url, and formats. Use the localhost URL for the url, and ["vocabulary"] for formats.
 3. Click "Submit". The Responses tab should open and show you the id of your app.
