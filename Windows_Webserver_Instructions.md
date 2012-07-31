@@ -32,4 +32,8 @@ Uncomment the line `#LoadModule userdir_module modules/mod_userdir.so` by removi
 
 * 6. Test that the webserver is picking up the index.html placed in your UserDir correctly.
 
-* 7. If you are able to see the flashcards page, (under your home directory) then your webserver is configured correctly. Follow the instructions in README to register your App and to modify flashcards.js
+* 7. If you are able to see the flashcards page, (under your home directory) then your webserver is configured correctly. 
+
+Follow the instructions in README to register your App and to modify flashcards.js
+
+
