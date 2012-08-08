@@ -16,10 +16,10 @@ To run the app yourself, you will need to clone the repository and make the dire
 
 #### Windows Instructions
 1. Install and run a webserver. We'll use Apache for this example.
-1a. Your webserver should be able to access a "UserHome" directory. See the github wiki for this repository for detailed instructions on configuring your webserver.
-2. Clone the flashcards repository as a sub-directory in your UserHome directory.
-3. Restart the webserver (Mandatory after making any config changes)
-4. You can now access the app at `http://localhost/~YOUR_USERNAME/flashcards`, where YOUR_USERNAME is your Windows user name. Note that you will not be able to connect to OpenMinds until completing the steps in "Registering the App".
+2. Your webserver should be able to access a "UserHome" directory. See the github wiki for this repository for detailed instructions on configuring your webserver.
+3. Clone the flashcards repository as a sub-directory in your UserHome directory.
+4. Restart the webserver (Mandatory after making any config changes)
+5. You can now access the app at `http://localhost/~YOUR_USERNAME/flashcards`, where YOUR_USERNAME is your Windows user name. Note that you will not be able to connect to OpenMinds until completing the steps in "Registering the App".
 
 ### Registering the App
 1. Visit the [Developer Apps page](http://openminds.io/developers/apps).
