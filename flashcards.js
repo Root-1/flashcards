@@ -4,7 +4,7 @@ var APP_ID = '500f92bf94d94a5b13000013';
 var REDIRECT_URI = 'http://localhost/~adam/flashcards/oauth_redirect.html';
 
 // The OpenMinds API host.
-var API_ROOT = 'http://api.openminds.io';
+var API_ROOT = 'https://api.openminds.io';
 // Id of the list to fetch through the OpenMinds API.
 var DEFAULT_LIST_ID = '4ffb717e94d94a744b000796';
 
@@ -78,7 +78,7 @@ function postLogIn() {
  */
 function getList(listId, success) {
   $.ajax({
-    url: API_ROOT + '/0/data/lists/' + listId,
+    url: API_ROOT + '/0/lists/' + listId,
     dataType: 'json',
     data: {
       'sort': 'adaptive',
